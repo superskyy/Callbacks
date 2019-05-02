@@ -4,3 +4,7 @@ var students = [
   { id: 3, name: "alex",     age: 22 },
   { id: 4, name: "alex",     age: 30 }
 ];
+
+students.sort(function(a, b) {
+	var a = students.a
+})
