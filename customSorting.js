@@ -5,6 +5,13 @@ var students = [
   { id: 4, name: "alex",     age: 30 }
 ];
 
-students.sort(function(a, b) {
-	var a = students.a
-})
+students.sort(function(a, b){
+	return a.name > b.name;
+});
+
+students.sort(function(a, b){
+	if (a.name === b.name) {
+		return a.age < b.age;
+	}   
+});
+console.log(students);
