@@ -1,10 +1,11 @@
-/ The second argument/parameter is expected to be a function
+// The second argument/parameter is expected to be a function
 function findWaldo(arr, found) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === "Waldo") {
-      found(i); // execute callback
+  	arr.forEach(function(element)) {
+  		if (arr[element] === "Waldo") {
+  			console.log(element);
+  			found(element);
+  		}
   	}
-  }
 }
 function actionWhenFound(ind) {
   console.log("Found Waldo at Index " + ind + "!");
