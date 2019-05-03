@@ -1,13 +1,21 @@
 var words = ["ground", "control", "to", "major", "tom"];
 
-map(words, function(word) {
+function map(first, callBack) {
+	var emptyArray = [];
+	for (var i = 0; i < first.length; i++) {
+		emptyArray.push(callBack(first[i]));
+	}
+	return emptyArray;
+}
+
+console.log(map(words, function(word) {
   return word.length;
-});
+}));
 
-map(words, function(word) {
+console.log(map(words, function(word) {
   return word.toUpperCase();
-});
+}));
 
-map(words, function(word) {
+console.log(map(words, function(word) {
   return word.split('').reverse().join('');
-});
+}));
