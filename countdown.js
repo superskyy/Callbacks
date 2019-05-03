@@ -4,14 +4,13 @@ var countdownGenerator = function (x) {
 	  	if (x > 0) {
 	  		console.log("T-minus " + x +" ...");
 	  	} 
-	  	if (x === 0) {
+	  	else if (x === 0) {
 	  		console.log("Blast Off!");
 	  	}
-	  	if (x < 0) {
+	  	else {
 	  		console.log("Rockets already gone, bub!");
 	  	}
 	  	x--;
-		return x;
 	}
 };
 
